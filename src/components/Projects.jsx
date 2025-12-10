@@ -24,7 +24,7 @@ const projects = [
     description: 'A modern and responsive portfolio website built with React and Tailwind CSS.',
     tags: ['React', 'ThreeJs', 'TailwindCSS'],
     image: 'https://via.placeholder.com/600x400',
-    link: '#'
+    link: 'https://portfolio-blue-five-31.vercel.app/'
   },
 ];
 
@@ -83,3 +83,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
