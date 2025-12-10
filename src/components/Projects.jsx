@@ -7,7 +7,7 @@ const projects = [
     title: 'RUMBLE-ROULETTE',
     description: 'Experience the thrill of roulette with this interactive online game!',
     tags: ['React', 'JavaScript', 'CSS'],
-    image: 'https://via.placeholder.com/600x400',
+    image: 'https://www.thegamehunter.co.uk/wp-content/uploads/casino-roulette-wheel.jpg',
     link: 'https://rumble-roulette.vercel.app/'
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     title: 'Memory Maze game',
     description: 'Memorize a glowing path from green start to red goal, then trace it from memory before time runs out.',
     tags: ['React', 'Vercel', 'TypeScript', 'JavaScript'],
-    image: 'https://via.placeholder.com/600x400',
+    image: 'https://play-lh.googleusercontent.com/YCkHJLIpElFzZcTdiA8ky2QvJCiCFeOjpc3EknPoZNUhHmGRjsIxkoNxCVfPGwoHt5Y',
     link: 'https://memory-maze-psi.vercel.app/'
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     title: 'MY Portfolio',
     description: 'A modern and responsive portfolio website built with React and Tailwind CSS.',
     tags: ['React', 'ThreeJs', 'TailwindCSS'],
-    image: 'https://via.placeholder.com/600x400',
+    image: 'https://mir-s3-cdn-cf.behance.net/projects/808/587ff4235471139.Y3JvcCwzOTAxLDMwNTEsOTY1LDUxMQ.jpg',
     link: 'https://portfolio-blue-five-31.vercel.app/'
   },
 ];
@@ -83,4 +83,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
