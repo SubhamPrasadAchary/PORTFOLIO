@@ -5,22 +5,24 @@ const Education = () => {
   const sectionId = 'education-section';
   const education = [
     {
-      degree: "B.Tech Computer Science Engineering",
+      degree: "B.Tech. Computer Science Engineering",
       school: "Amity University",
       period: "2022 - 2026",
-      logo: "/logos/amity-logo.png",
+      logo: "/images/amity-logo.png",
       description: "CGPA 7.28"
     },
     {
       degree: "XII",
       school: "Manava Bharati India International School",
       period: "2020 - 2021",
+      logo: "/images/manavbharati-logo.png",
       description: "80%"
     },
     {
       degree: "X",
       school: "Manava Bharati India International School",
       period: "2018 - 2019",
+      logo: "/images/manavbharati-logo.png",
       description: "86%"
     }
   ];
@@ -42,10 +44,22 @@ const Education = () => {
                 className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-purple-200/30"
               >
                 <div className="flex items-center gap-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-lg">
-                      {edu.school.charAt(0)}
-                    </div>
+                  <div className="w-22 h-22 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-lg flex-shrink-0 overflow-hidden p-1">
+                    {edu.logo ? (
+                      <img 
+                        src={edu.logo} 
+                        alt={`${edu.school} logo`} 
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%236b7280"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="10">No Logo</text></svg>';
+                        }}
+                      />
+                    ) : (
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-xs">
+                        {edu.school.charAt(0)}
+                      </div>
+                    )}
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">
