@@ -93,9 +93,17 @@ const Hero3D = () => {
             <div className="relative max-w-md w-full lg:ml-8 mt-8 lg:mt-0">
               <div className="absolute -left-4 top-1/2 transform -translate-y-1/2 w-1 h-3/5 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full"></div>
               <div className="pl-8">
-                <p className="text-lg md:text-xl font-medium text-gray-700 dark:text-gray-200 italic">
-                  "Transforming Ideas into <span className="text-indigo-600 dark:text-indigo-400 font-semibold">Digital Reality</span> through Code & Creativity"
-                </p>
+                <div className="text-gray-700 dark:text-gray-200 italic">
+                  <p className="text-lg md:text-xl font-medium leading-relaxed">
+                    "Our future is decided by
+                  </p>
+                  <p className="text-indigo-600 dark:text-indigo-400 font-bold text-xl md:text-2xl mt-1">
+                    What we do TODAY!
+                  </p>
+                  <p className="text-red-500 dark:text-red-400 font-semibold text-xl md:text-2xl">
+                    not TOMORROW"
+                  </p>
+                </div>
               </div>
             </div>
           </div>
