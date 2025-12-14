@@ -67,7 +67,15 @@ const Hero3D = () => {
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
           4th-year B.Tech CSE student at Amity University, passionate about coding, web development, and AI, actively building projects and continuously learning. Ex-intern@JabszGamingStudiosLLP.
         </p>
-        <button className="px-8 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-colors">
+        <button 
+          onClick={() => {
+            const projectsSection = document.getElementById('projects');
+            if (projectsSection) {
+              projectsSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+          className="px-8 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-colors"
+        >
           View My Work
         </button>
       </div>
@@ -76,3 +84,4 @@ const Hero3D = () => {
 };
 
 export default Hero3D;
+
