@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>© {currentYear} Your Name. All rights reserved.</p>
+          <p>© {currentYear} Subham Prasad Achary. All rights reserved.</p>
           <p className="text-sm mt-2">Built with React, Three.js, and Tailwind CSS</p>
         </div>
       </div>
