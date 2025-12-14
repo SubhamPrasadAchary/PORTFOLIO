@@ -1,28 +1,30 @@
 import React from 'react';
 
+// Import logos directly
+import amityLogo from '../../public/images/amity-logo.png';
+import manavBharatiLogo from '../../public/images/manavbharati-logo.png';
+
 const Education = () => {
-  // Add a unique ID to the education section for better debugging
-  const sectionId = 'education-section';
   const education = [
     {
       degree: "B.Tech. Computer Science Engineering",
       school: "Amity University",
       period: "2022 - 2026",
-      logo: "/images/amity-logo.png",
+      logo: amityLogo,
       description: "CGPA 7.28"
     },
     {
       degree: "XII",
       school: "Manava Bharati India International School",
       period: "2020 - 2021",
-      logo: "/images/manavbharati-logo.png",
+      logo: manavBharatiLogo,
       description: "80%"
     },
     {
       degree: "X",
       school: "Manava Bharati India International School",
       period: "2018 - 2019",
-      logo: "/images/manavbharati-logo.png",
+      logo: manavBharatiLogo,
       description: "86%"
     }
   ];
@@ -47,14 +49,14 @@ const Education = () => {
                   <div className="w-22 h-22 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-lg flex-shrink-0 overflow-hidden p-1">
                     {edu.logo ? (
                       <img 
-                        src={edu.logo} 
-                        alt={`${edu.school} logo`} 
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          e.target.onerror = null;
-                          e.target.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%236b7280"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="10">No Logo</text></svg>';
-                        }}
-                      />
+                      src={edu.logo} 
+                      alt={`${edu.school} logo`} 
+                      className="w-full h-full object-contain p-2"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%236b7280"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="10">No Logo</text></svg>';
+                      }}
+                    />
                     ) : (
                       <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-xs">
                         {edu.school.charAt(0)}
