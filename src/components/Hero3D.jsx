@@ -62,7 +62,7 @@ const Hero3D = () => {
       <div ref={mountRef} className="absolute inset-0" />
       <div className="relative z-10 text-center px-4">
         <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-          Hi, I'm <span className="text-indigo-600 dark:text-indigo-400">Subham Achary</span>
+          Hi, I'm <span className="text-indigo-600 dark:text-indigo-400">Subham Prasad Achary</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
           4th-year B.Tech CSE student at Amity University, passionate about coding, web development, and AI, actively building projects and continuously learning. Ex-intern@JabszGamingStudiosLLP.
