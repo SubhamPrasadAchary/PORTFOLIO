@@ -90,18 +90,18 @@ const Hero3D = () => {
               </div>
             </div>
             
-            <div className="relative max-w-md w-full lg:ml-8 mt-8 lg:mt-0">
-              <div className="absolute -left-4 top-1/2 transform -translate-y-1/2 w-1 h-3/5 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full"></div>
+            <div className="relative max-w-md w-full lg:ml-8 mt-12 lg:mt-16">
+              <div className="absolute -left-4 top-1/3 transform -translate-y-1/2 w-1 h-3/5 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full"></div>
               <div className="pl-8">
                 <div className="text-gray-700 dark:text-gray-200 italic">
                   <p className="text-lg md:text-xl font-medium leading-relaxed">
-                    "Our future is decided by
+                    "Tumhara result decide nahi karta hai
                   </p>
                   <p className="text-indigo-600 dark:text-indigo-400 font-bold text-xl md:text-2xl mt-1">
-                    What we do TODAY!
+                    ki tum loser ho ki nahi ...
                   </p>
                   <p className="text-red-500 dark:text-red-400 font-semibold text-xl md:text-2xl">
-                    not TOMORROW"
+                    tumhari koshish decide karti hai"
                   </p>
                 </div>
               </div>
