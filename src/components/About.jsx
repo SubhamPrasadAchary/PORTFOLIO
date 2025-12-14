@@ -4,66 +4,73 @@ import { FaBrain } from 'react-icons/fa';
 
 const About = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-800 dark:to-gray-900 relative z-10">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-800 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-white/90 dark:bg-gray-800/95 backdrop-blur-sm rounded-2xl shadow-2xl overflow-visible p-8 border-2 border-blue-200 dark:border-blue-900 relative z-20"
-          style={{
-            minHeight: '500px',
-            boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-            transform: 'translateZ(0)' // Force hardware acceleration
-          }}
+          className="bg-gray-800/95 backdrop-blur-sm rounded-2xl shadow-xl overflow-visible p-8 border border-gray-700 relative z-20"
         >
-          <div className="flex items-center mb-8">
-            <FaBrain className="text-2xl text-blue-600 mr-3" />
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
               Technical Skills
             </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
           </div>
           
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Frontend</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-gray-700/50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold text-white mb-4 flex items-center">
+                <span className="w-2 h-6 bg-blue-500 rounded-full mr-3"></span>
+                Frontend
+              </h3>
               <div className="flex flex-wrap gap-2">
-                {['React', 'HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'].map((skill) => (
-                  <span key={skill} className="px-4 py-2 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 text-sm rounded-full font-medium">
+                {['React', 'HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'Redux', 'Next.js', 'TypeScript'].map((skill) => (
+                  <span key={skill} className="px-4 py-2 bg-blue-500/20 text-blue-400 text-sm font-medium rounded-full border border-blue-500/30 hover:bg-blue-500/30 transition-colors">
                     {skill}
                   </span>
                 ))}
               </div>
             </div>
             
-            <div>
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Backend</h3>
+            <div className="bg-gray-700/50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold text-white mb-4 flex items-center">
+                <span className="w-2 h-6 bg-green-500 rounded-full mr-3"></span>
+                Backend
+              </h3>
               <div className="flex flex-wrap gap-2">
-                {['Node.js', 'Express', 'MongoDB', 'SQL'].map((skill) => (
-                  <span key={skill} className="px-4 py-2 bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 text-sm rounded-full font-medium">
+                {['Node.js', 'Express', 'MongoDB', 'SQL', 'REST APIs'].map((skill) => (
+                  <span key={skill} className="px-4 py-2 bg-green-500/20 text-green-400 text-sm font-medium rounded-full border border-green-500/30 hover:bg-green-500/30 transition-colors">
                     {skill}
                   </span>
                 ))}
               </div>
             </div>
             
-            <div>
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">AI/ML</h3>
+            <div className="bg-gray-700/50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold text-white mb-4 flex items-center">
+                <span className="w-2 h-6 bg-purple-500 rounded-full mr-3"></span>
+                AI/ML
+              </h3>
               <div className="flex flex-wrap gap-2">
-                {['Python', 'TensorFlow', 'OpenCV', 'Pandas'].map((skill) => (
-                  <span key={skill} className="px-4 py-2 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 text-sm rounded-full font-medium">
+                {['Python', 'TensorFlow', 'OpenCV', 'Pandas', 'NumPy', 'PyTorch'].map((skill) => (
+                  <span key={skill} className="px-4 py-2 bg-purple-500/20 text-purple-400 text-sm font-medium rounded-full border border-purple-500/30 hover:bg-purple-500/30 transition-colors">
                     {skill}
                   </span>
                 ))}
               </div>
             </div>
             
-            <div>
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Tools & Others</h3>
+            <div className="bg-gray-700/50 p-6 rounded-xl">
+              <h3 className="text-xl font-semibold text-white mb-4 flex items-center">
+                <span className="w-2 h-6 bg-yellow-500 rounded-full mr-3"></span>
+                Tools & Others
+              </h3>
               <div className="flex flex-wrap gap-2">
-                {['Git', 'GitHub', 'VS Code', 'Postman', 'Figma'].map((skill) => (
-                  <span key={skill} className="px-4 py-2 bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-200 text-sm rounded-full font-medium">
+                {['Git', 'GitHub', 'VS Code', 'AWS'].map((skill) => (
+                  <span key={skill} className="px-4 py-2 bg-yellow-500/20 text-yellow-400 text-sm font-medium rounded-full border border-yellow-500/30 hover:bg-yellow-500/30 transition-colors">
                     {skill}
                   </span>
                 ))}
