@@ -64,20 +64,9 @@ const Hero3D = () => {
         <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
           Hi, I'm <span className="text-indigo-600 dark:text-indigo-400">Subham Prasad Achary</span>
         </h1>
-        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
+        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
           4th-year B.Tech CSE student at Amity University, passionate about coding, web development, and AI, actively building projects and continuously learning. Ex-intern@JabszGamingStudiosLLP.
         </p>
-        <button 
-          onClick={() => {
-            const projectsSection = document.getElementById('projects');
-            if (projectsSection) {
-              projectsSection.scrollIntoView({ behavior: 'smooth' });
-            }
-          }}
-          className="px-8 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-colors"
-        >
-          View My Work
-        </button>
       </div>
     </section>
   );
