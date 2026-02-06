@@ -12,7 +12,7 @@ Welcome to my Portfolio Website — a modern, fast, and fully responsive web exp
 
 📱 Fully responsive for all devices
 
-📁 Clean and scalable folder structure
+📁 Clean and scalable folder structure 
 
 🌑 Beautiful dark/light theme support
 
