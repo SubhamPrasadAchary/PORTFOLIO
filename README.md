@@ -16,7 +16,7 @@ Welcome to my Portfolio Website — a modern, fast, and fully responsive web exp
 
 🌑 Beautiful dark/light theme support
 
-# 🧰 Tech Stack
+# 🧰 Tech Stack 
 
 ⚛️ React.js
  
