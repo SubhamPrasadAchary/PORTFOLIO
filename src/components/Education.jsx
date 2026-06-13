@@ -9,7 +9,7 @@ const Education = () => {
       school: "Amity University",
       period: "2022 - 2026",
       logo: "/images/amity-logo.png",
-      description: "CGPA 7.28"
+      description: "CGPA 7.30"
     },
     {
       degree: "XII",
