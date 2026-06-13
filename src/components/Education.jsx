@@ -77,7 +77,7 @@ const Education = () => {
           </div>
           <div className="mt-10 flex justify-center">
             <a 
-              href="https://drive.google.com/file/d/1KFZzjIOxZYuCxkN_K9QUogJV2LkKcWhQ/view" 
+              href="https://drive.google.com/file/d/1F7hnc8-5acLJIJnnBQ-8C1Ti53kL4d81/view?usp=drive_link" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full hover:opacity-90 transition-opacity"
